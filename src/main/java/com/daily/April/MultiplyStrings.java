@@ -10,7 +10,7 @@ package com.daily.April;
  */
 public class MultiplyStrings {
 
-    //针对这个问题，我所设想的最简单的方法就是直接使用BigDicimal进行运算然后转换成字符串即可
+    //针对这个问题，我所设想的最简单的方法就是直接使用BigDecimal进行运算然后转换成字符串即可
     //但这这种方法比较low，因此借助了网上的方法，简单有效
     public String multiply(String num1, String num2) {
         int m = num1.length(), n = num2.length();
@@ -26,7 +26,7 @@ public class MultiplyStrings {
                 pos[p2] = (sum) % 10;
             }
         }
-        
+
         StringBuilder sb = new StringBuilder();
         for (int p : pos) if (!(sb.length() == 0 && p == 0)) sb.append(p);
         return sb.length() == 0 ? "0" : sb.toString();

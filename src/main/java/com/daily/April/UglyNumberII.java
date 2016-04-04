@@ -26,7 +26,7 @@ public class UglyNumberII {
         }
         return dp[n];
     }
-    
+
     //这是自己所做的方法，相比以上方法，显得是很low
     public int nthUglyNumberComp(int n) {
         if (n < 1) {
