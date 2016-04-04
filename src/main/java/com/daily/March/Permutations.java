@@ -13,6 +13,7 @@ import java.util.List;
  * [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
  */
 public class Permutations {
+
     public List<List<Integer>> permute(int[] nums) throws Exception {
         if (nums == null || nums.length < 1) return null;
         ArrayList<ArrayList<Integer>> all = new ArrayList<ArrayList<Integer>>();
