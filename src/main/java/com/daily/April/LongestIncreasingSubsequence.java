@@ -15,6 +15,9 @@ import java.util.Arrays;
  * <p/>
  * Follow up: Could you improve it to O(n log n) time complexity?
  */
+
+
+//解决DP问题的核心是找出最有子结构以及最佳状态转移方程，只要找到状态转移方程，问题就可迎刃而解
 public class LongestIncreasingSubsequence {
     public int lengthOfLIS(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -31,6 +34,7 @@ public class LongestIncreasingSubsequence {
                 }
             }
         }
+
         int max = 0;
         for (int i = 0; i < length; i++) {
             max = Math.max(max, res[i]);
